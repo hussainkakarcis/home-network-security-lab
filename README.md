@@ -37,10 +37,10 @@ The ACL match counters confirmed that the deny rule was actively filtering traff
 
 ## Files
 - `Home_Network_Security_Lab.pkt` - Cisco Packet Tracer project
-- `screenshots/network_topology.png` - full lab topology
-- `screenshots/trusted_pc_ping_success.png` - trusted PC successfully reaching the server
-- `screenshots/guest_pc_ping_blocked.png` - guest PC blocked from the server
-- `screenshots/acl_verification.png` - ACL configuration and match counters
+- `network_topology.png` - full lab topology
+- `trusted_pc_ping_success.png` - trusted PC successfully reaching the server
+- `guest_pc_ping_blocked.png` - guest PC blocked from the server
+- `acl_verification.png` - ACL configuration and match counters
 
 ## Skills Demonstrated
 - Cisco Packet Tracer
@@ -54,13 +54,13 @@ The ACL match counters confirmed that the deny rule was actively filtering traff
 ## Screenshots
 
 ### Network Topology
-![Network Topology](screenshots/network_topology.png)
+![Network Topology](network_topology.png)
 
 ### Trusted PC - Successful Ping
-![Trusted PC Ping](screenshots/trusted_pc_ping_success.png)
+![Trusted PC Ping](trusted_pc_ping_success.png)
 
 ### Guest PC - Blocked Ping
-![Guest PC Blocked](screenshots/guest_pc_ping_blocked.png)
+![Guest PC Blocked](guest_pc_ping_blocked.png)
 
 ### ACL Verification
-![ACL Verification](screenshots/acl_verification.png)
+![ACL Verification](acl_verification.png)
