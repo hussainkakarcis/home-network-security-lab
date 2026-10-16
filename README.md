@@ -36,7 +36,7 @@ Together, the ping results and deny matches support the demonstrated guest-to-se
 To repeat the check:
 1. Open `Home_Network_Security_Lab.pkt` in Cisco Packet Tracer.
 2. Run `show access-lists` on the router and note the current counters.
-3. Run `ping 192.168.2.100` from each PC. The trusted PC should receive server replies; the guest PC should be blocked.
+3. Run `ping 192.168.2.100` from each PC. The trusted PC should receive server replies; the guest PC's ICMP ping to the server should be blocked, with no server replies. This check tests ICMP ping behavior only; it does not validate TCP or UDP application access.
 4. Run `show access-lists` again and compare the counters. The guest-to-server deny counter should increase when guest traffic matches the rule. Totals may differ from the saved screenshot.
 
 ## Files
