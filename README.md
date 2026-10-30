@@ -39,6 +39,18 @@ To repeat the check:
 3. Run `ping 192.168.2.100` from each PC. The trusted PC should receive server replies; the guest PC's ICMP ping to the server should be blocked, with no server replies. This check tests ICMP ping behavior only; it does not validate TCP or UDP application access.
 4. Run `show access-lists` again and compare the counters. The guest-to-server deny counter should increase when guest traffic matches the rule. Totals may differ from the saved screenshot.
 
+## Evidence limits and next verification
+
+The saved topology screenshot is an earlier layout capture with red router-link
+indicators; it is not proof that the final interfaces are up. The separate ping
+and ACL screenshots above are the recorded verification evidence.
+
+See [VERIFY.md](VERIFY.md) for a repeatable interface, ICMP, and HTTP check and
+the evidence to save. HTTP results are **not yet recorded**. The trusted and
+guest PCs share a subnet; this lab does not isolate guest traffic from the
+trusted PC. Full guest isolation would require a separate subnet/VLAN and an
+explicit policy, followed by new tests.
+
 ## Files
 - `Home_Network_Security_Lab.pkt` - Cisco Packet Tracer project
 - `router_config.txt` - Router interface and ACL configuration commands, verification commands, and endpoint addressing
@@ -65,6 +77,8 @@ Cisco Packet Tracer lab demonstrating IPv4 routing and extended ACL filtering, w
 ## Screenshots
 
 ### Network Topology
+
+Historical layout capture; red link indicators are not a verified working-state snapshot.
 ![Network Topology](network_topology.png)
 
 ### Trusted PC - Successful Ping
